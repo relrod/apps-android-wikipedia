@@ -76,7 +76,8 @@ import org.wikipedia.page.PageTitle;
 import org.wikipedia.page.gallery.GalleryActivity;
 import org.wikipedia.page.gallery.ImagePipelineBitmapGetter;
 import org.wikipedia.page.gallery.MediaDownloadReceiver;
-import org.wikipedia.page.linkpreview.LinkPreviewDialog;
+//import org.wikipedia.page.linkpreview.LinkPreviewDialog;
+import org.wikipedia.wiktionary.WiktionaryDialog;
 import org.wikipedia.page.snippet.CompatActionMode;
 import org.wikipedia.random.RandomHandler;
 import org.wikipedia.readinglist.AddToReadingListDialog;
@@ -763,12 +764,8 @@ public class MainActivity extends ThemedActionBarActivity implements FeedFragmen
         loadPage(title, historyEntry, position, allowStateLoss, mustBeEmpty);
     }
 
-    public void showLinkPreview(PageTitle title, int entrySource) {
-        showLinkPreview(title, entrySource, null);
-    }
-
-    public void showLinkPreview(PageTitle title, int entrySource, @Nullable Location location) {
-        bottomSheetPresenter.show(LinkPreviewDialog.newInstance(title, entrySource, location));
+    public void showLinkPreview(PageTitle title, String selectedText) {
+        bottomSheetPresenter.show(WiktionaryDialog.newInstance(title, selectedText));
     }
 
     private void hideLinkPreview() {

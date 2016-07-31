@@ -180,7 +180,7 @@ public class NearbyFragment extends Fragment {
                         NearbyPage page = findNearbyPageFromMarker(marker);
                         if (page != null) {
                             PageTitle title = new PageTitle(page.getTitle(), site, page.getThumblUrl());
-                            ((MainActivity) getActivity()).showLinkPreview(title, HistoryEntry.SOURCE_NEARBY, page.getLocation());
+                            ((MainActivity) getActivity()).showLinkPreview(title, title.toString());
                             return true;
                         } else {
                             return false;

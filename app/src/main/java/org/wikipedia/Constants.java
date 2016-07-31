@@ -7,7 +7,7 @@ public final class Constants {
     public static final int RECENT_SEARCHES_FRAGMENT_LOADER_ID = 101;
     public static final int USER_OPTION_ROW_FRAGMENT_LOADER_ID = 102;
 
-    public static final String WIKIPEDIA_URL = "https://wikipedia.org/";
+    public static final String WIKIPEDIA_URL = "https://wiktionary.org/";
 
     public static final int ACTIVITY_REQUEST_WRITE_EXTERNAL_STORAGE_PERMISSION = 44;
 

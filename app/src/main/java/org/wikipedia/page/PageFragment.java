@@ -390,7 +390,7 @@ public class PageFragment extends Fragment implements BackPressedHandler {
             HistoryEntry historyEntry = new HistoryEntry(title, HistoryEntry.SOURCE_INTERNAL_LINK);
             getMainActivity().loadPage(title, historyEntry);
         } else {
-            getMainActivity().showLinkPreview(title, HistoryEntry.SOURCE_INTERNAL_LINK);
+            getMainActivity().showLinkPreview(title, title.toString());
         }
     }
 
